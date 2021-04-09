@@ -1,0 +1,32 @@
+body {
+    width: 380px;
+    height: 80px;
+}
+
+#countTarget {
+    width: 320px;
+    margin-right: 8px;
+}
+
+#controllers {
+    display: flex;
+}
+
+.controllers_btn {
+    padding: 2px 6px;
+    background-color: #dddddd;
+    border-radius: 3px;
+}
+
+.controllers_btn:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.controllers_btn:first-of-type {
+    margin-right: 16px;
+}
+
+#resultWord {
+    overflow-wrap: anywhere;
+}

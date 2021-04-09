@@ -1,0 +1,22 @@
+{
+    "name": "Simple_word_count",
+    "description": "さっと確認する文字数カウンター",
+    "version": "0.1.0",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_icon": {
+          "16": "icon.png"
+        },
+        "default_popup": "input.html"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [ "http://*/*", "https://*/*" ],
+            "js": ["index.js"]
+        }
+    ]
+
+}
