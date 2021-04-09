@@ -3,6 +3,12 @@ body {
     height: 80px;
 }
 
+.title {
+    font-size: 10px;
+    color: #afafaf;
+    font-weight: bold;
+}
+
 #countTarget {
     width: 320px;
     margin-right: 8px;
