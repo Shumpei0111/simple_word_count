@@ -8,8 +8,13 @@
     <link type='text/css' rel='stylesheet' href='style.css'>
 </head>
 <body>
-    <p class='title'>シンプル文字数カウンター</p>
-    <input type='text' name='word' id='countTarget'><span id='showField'>0</span><span>文字</span>
+    <div class="titleContainer">
+        <p class='title'>シンプル文字数カウンター</p>
+        <span id='closeBtn' class='controllers_btn'>閉じる</span>
+    </div>
+    <div id="inputContaienr">
+        <input type='text' name='word' id='countTarget'><span id='showField'>0</span><span>文字</span>
+    </div>
     <p id='resultWord'></p>
     <div id='controllers'>
         <p id='saveBtn' class='controllers_btn'>保存</p>

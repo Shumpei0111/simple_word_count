@@ -1,6 +1,6 @@
 {
     "name": "Simple_word_count",
-    "description": "さっと確認する文字数カウンター",
+    "description": "さっと確認する文字数カウンター。「保存」ボタンで１つだけ保存が可能です。「読み込み」ボタンで保存した文字を読み込んで表示します。",
     "version": "1.0.0",
     "manifest_version": 2,
     "browser_action": {

@@ -3,6 +3,7 @@ const word  = document.getElementById( 'countTarget' );
 const saveBtn   = document.getElementById( 'saveBtn' );
 const showField = document.getElementById( 'showField' );
 const loadBtn   = document.getElementById( 'loadBtn' );
+const closeBtn  = document.getElementById( 'closeBtn' );
 
 const entity = {
     wordCountValue: ''
@@ -50,12 +51,15 @@ function getSevedWord() {
 }
 
 function init() {
+    if( !word ) {
+        return;
+    }
     word.addEventListener( 'keyup', { target: word, handleEvent: showCountLength }, false );
     word.addEventListener( 'keyup', { target: word, handleEvent: showResult }, false );
 
     saveBtn.addEventListener( 'click', saveWord, false );
-
     loadBtn.addEventListener( 'click', getSevedWord, false );
+    closeBtn.addEventListener( 'click', () => { window.close() } );
 
     word.focus();
 }
